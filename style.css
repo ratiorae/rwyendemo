@@ -348,7 +348,7 @@ h2 {
 }
 
 #stuff h1 { font-size: clamp(18px, 4vw, 28px); }
-#stuff p  { font-size: clamp(18px, 4vw. 28px); margin: auto; }
+#stuff p  { font-size: clamp(18px, 4vw, 28px); margin: auto; }
 #stuff a:link { color: var(--marquee-text); }
 #stuff img { width: 40px; }
 #stuff img:hover {
