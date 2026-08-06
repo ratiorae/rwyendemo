@@ -515,7 +515,7 @@ tr:after { content: ""; display: table; clear: both; }
     .hero-bio-wrap { flex-direction: column; align-items: center; }
 
     #title {
-        font-size: clamp(9vw, 18vw, 60px);
+        font-size: clamp(9vw, 5vw + 2rem, 80px);
         max-width: 90vw;
         white-space: normal;
         overflow-wrap: break-word;
