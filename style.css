@@ -590,20 +590,6 @@ h2 {
     color: var(--body-text);
 }
 
-@media screen and (max-width: 600px) {
-    .offerings-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .offering-card {
-        max-width: 90vw;
-        width: 100%;
-        height: auto;
-        min-height: 160px;
-    }
-}
-
 /* ── Tables ── */
 table { padding-left: 5px; width: auto; margin: auto; }
 td    { font-size: 25px; float: left; }
@@ -666,4 +652,34 @@ tr:after { content: ""; display: table; clear: both; }
 
     #bookshelf-tab  { right: 10px; }
     #bookshelf-panel { width: 280px; }
+
+   .offerings-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offering-card {
+        max-width: 90vw;
+        width: 100%;
+        height: 220px;
+    }
+   .card-inner {
+        min-height: 160px;
+    }
+
+    .card-front, .card-back {
+        min-height: 160px;
+    }
+
+    .offering-card h3 {
+        font-size: clamp(22px, 5vw, 28px);
+    }
+
+    .card-back p {
+        font-size: clamp(18px, 4vw, 22px);
+    }
+
+    .card-examples {
+        font-size: clamp(14px, 3vw, 16px);
+    }
 }
