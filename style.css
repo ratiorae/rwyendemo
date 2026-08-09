@@ -113,7 +113,7 @@ a:hover {
 }
 
 .nav-tab {
-    background-color: var(--marquee-bg);
+    background-color: var(--button-bg);
     color: var(--marquee-text);
     font-family: var(--font-main);
     font-size: clamp(12px, 2vw, 20px);
@@ -132,7 +132,7 @@ a:hover {
 
 .nav-tab:hover {
     opacity: 1;
-    color: var(--marquee-text);
+    color: #8a3d99;
     transform: translateY(0px);
 }
 
@@ -158,7 +158,8 @@ a:hover {
     box-sizing: border-box;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
     box-shadow:
         8px 8px 0 var(--shadow-dark),
         12px 12px 0 var(--shadow-darker);
