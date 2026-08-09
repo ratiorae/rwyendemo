@@ -115,7 +115,7 @@ a:hover {
 }
 
 .nav-tab {
-    background-color: var(--marquee-bg);
+    background-color: rgba(203, 47, 102, 0.75);
     color: var(--bg);
     font-family: var(--font-main);
     font-size: clamp(12px, 2vw, 20px);
@@ -126,7 +126,6 @@ a:hover {
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    opacity: 0.75;
     transition: opacity 0.2s, background-color 0.2s, transform 0.2s;
     transform: translateY(3px);
     box-shadow: 6px 0 0 var(--shadow-dark);
