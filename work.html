@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+(ง'̀-'́)ง
+COPYRIGHT: RACHEL W.YEN 2025 // @ratiorae
+-->
+<html>
+
+<head>
+    <title>Work With Me — Rachel W. Yen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="page-wrap">
+
+    <!-- TITLE -->
+    <div id="title">Rachel W. Yen</div>
+
+    <!-- BROWSER TAB NAV -->
+    <div id="nav-tabs">
+        <a href="index.html" class="nav-tab">🏠 Home</a>
+        <a href="music.html" class="nav-tab">🎻 Music</a>
+        <a href="work.html" class="nav-tab active">💼 Work With Me</a>
+        <a href="about.html" class="nav-tab">🌿 About</a>
+    </div>
+
+    <!-- MARQUEE -->
+    <div id="marquee">
+        <marquee>Available for recordings, arrangements, score commissions, and more!</marquee>
+    </div>
+
+    <!-- MAIN BOX -->
+    <div id="box">
+
+        <div class="work-intro">
+            <p>Hi! I'm Rachel — a Malaysian violinist, composer, and arranger based in Singapore. Here's what I can do for you:</p>
+        </div>
+
+        <!-- OFFERINGS -->
+        <div class="offerings-grid">
+
+            <div class="offering-card">
+                <div class="offering-icon">📝</div>
+                <h3>Compose</h3>
+                <p>Original music for film, TV, ads, motion graphics, exhibitions, and installations.</p>
+            </div>
+
+            <div class="offering-card">
+                <div class="offering-icon">🎼</div>
+                <h3>Arrange & Transcribe</h3>
+                <p>Scores and arrangements for any ensemble or occasion.</p>
+            </div>
+
+            <div class="offering-card">
+                <div class="offering-icon">🎙</div>
+                <h3>Record</h3>
+                <p>Strings, backing vocals, synths — remote or in-person sessions.</p>
+            </div>
+
+            <div class="offering-card">
+                <div class="offering-icon">🎻</div>
+                <h3>Perform</h3>
+                <p>Classical, pop, pit orchestras, ensembles, pop bands, weddings, and corporate events.</p>
+            </div>
+
+            <div class="offering-card">
+                <div class="offering-icon">☎️</div>
+                <h3>Assemble</h3>
+                <p>String ensembles and pop, rock, funk, or jazz bands for your event or project.</p>
+            </div>
+
+        </div>
+
+        <!-- NOT LOOKING FOR SERVICES -->
+        <div class="coffee-section">
+            <p>Don't need any of these services but would like to support my artistic development?</p>
+            <div id="button-hole">
+                <div id="buttons2">
+                    <a href="https://buymeacoffee.com/ratiorae/" target="_blank">
+                        ☕️ Buy Me A Coffee
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div id="stuff">
+            <h1>Let's work together!</h1>
+            <p style="font-size: clamp(14px, 2vw, 20px); margin-bottom: 20px;">Fill in the form below and I'll get back to you as soon as I can.</p>
+            <div id="button-hole">
+                <div id="buttons">
+                    <a href="/hello" target="_blank">
+                        Get In Touch 📬
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END MAIN BOX -->
+
+</div>
+<!-- END PAGE WRAP -->
+
+<!-- TITLE BOUNCE ANIMATION -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const titleEl = document.getElementById("title");
+    const originalText = titleEl.textContent.trim();
+
+    function animateTitle() {
+        titleEl.textContent = "";
+        const words = originalText.split(" ");
+        words.forEach((word, wordIndex) => {
+            const wordSpan = document.createElement("span");
+            wordSpan.className = "word";
+            [...word].forEach((char, i) => {
+                const letterSpan = document.createElement("span");
+                letterSpan.className = "letter";
+                letterSpan.textContent = char;
+                letterSpan.style.animationDelay = `${(wordIndex * 0.2 + i * 0.05)}s`;
+                wordSpan.appendChild(letterSpan);
+            });
+            titleEl.appendChild(wordSpan);
+            titleEl.appendChild(document.createTextNode(" "));
+        });
+    }
+
+    animateTitle();
+    setInterval(() => { titleEl.innerHTML = ""; animateTitle(); }, 15000);
+});
+</script>
+
+</body>
+</html>
