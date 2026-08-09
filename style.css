@@ -103,7 +103,7 @@ a:hover {
 /* ── Browser Tab Navigation ── */
 #nav-tabs {
     display: flex;
-    gap: 0px;
+    gap: 6px;
     padding: 0;
     margin: 0;
     align-items: flex-end;
