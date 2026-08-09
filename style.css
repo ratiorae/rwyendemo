@@ -129,7 +129,7 @@ a:hover {
     opacity: 0.75;
     transition: opacity 0.2s, background-color 0.2s, transform 0.2s;
     transform: translateY(3px);
-    box-shadow: 2px 0 0 var(--shadow-dark);
+    box-shadow: 3px 0 0 var(--shadow-dark);
 }
 
 .nav-tab:hover {
