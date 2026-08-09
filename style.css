@@ -523,7 +523,7 @@ tr:after { content: ""; display: table; clear: both; }
     }
 
     #marquee  { font-size: 20px; padding: 10px; }
-    #bio      { font-size: 22px; max-width: 90vw; text-align: center; margin: auto; }
+    #bio      { padding: 10px; font-size: 22px; max-width: 90vw; text-align: center; margin: auto; }
     #hero     { max-width: 90vw; }
     #box      { padding: 10px; }
 
