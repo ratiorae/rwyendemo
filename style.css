@@ -132,7 +132,7 @@ a:hover {
 }
 
 .nav-tab:link, .nav-tab:visited {
-    color: var(--bg);
+    color: #d3d3d3;
 }
 
 .nav-tab:hover {
