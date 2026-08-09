@@ -542,7 +542,7 @@ h2 {
     background-color: var(--footer-bg);
     color: #fff;
     transform: rotateY(180deg);
-    box-shadow: -6px 6px 0 var (--shadow-dark);
+    box-shadow: -6px 6px 0 var(--shadow-dark);
 }
 
 .offering-icon {
