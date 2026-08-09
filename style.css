@@ -517,8 +517,7 @@ h2 {
 .card-front, .card-back {
     position: absolute;
     width: 100%;
-    height: auto;
-    min-height: 160px;
+    height: 100%;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     border-radius: 20px;
@@ -542,6 +541,7 @@ h2 {
     background-color: var(--footer-bg);
     color: #fff;
     transform: rotateY(180deg);
+    box-shadow: -6px 6px 0 var (--shadow-dark);
 }
 
 .offering-icon {
