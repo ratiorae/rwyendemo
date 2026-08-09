@@ -25,6 +25,27 @@ ICONS from icons8.com
             });
         })(jQuery);
     </script>
+
+<script>
+// When the user clicks on div, open the popup
+let popupTimeout;
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+
+  // Clear previous timers and classes
+  clearTimeout(popupTimeout);
+  popup.classList.remove("fadeOut");
+  popup.classList.add("show");
+
+  // After 3 seconds, fade out
+  popupTimeout = setTimeout(function() {
+    popup.classList.remove("show");
+    popup.classList.add("fadeOut");
+  }, 3000);
+}
+</script>
+    
 </head>
 
 <body>
