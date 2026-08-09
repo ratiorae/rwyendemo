@@ -111,12 +111,10 @@ a:hover {
     position: relative;
     z-index: 10;
     overflow: hidden;
-    padding-bottom: 0;
 }
 
 .nav-tab {
     background-color: rgba(203, 47, 102, 0.75);
-    color: var(--bg);
     font-family: var(--font-main);
     font-size: clamp(12px, 2vw, 20px);
     padding: 8px 20px;
@@ -250,7 +248,7 @@ a:hover {
 
 #buttons a {
     color: var(--marquee-text);
-    font-size: clamp (20px, 5vw, 28px);
+    font-size: clamp(20px, 5vw, 28px);
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
@@ -277,7 +275,7 @@ a:hover {
     border-radius: 20px;
     box-shadow: 8px 8px 0 var(--shadow-dark),
                 12px 12px 0 var(--shadow-darker);
-    font-size: clamp (20px, 5vw, 28px);
+    font-size: clamp(20px, 5vw, 28px);
     text-align: center;
     flex: 0 0 auto;
     max-width: 300px;
@@ -496,10 +494,8 @@ h2 {
 /* ── Flip Card ── */
 .offering-card {
     flex: 1 1 220px;
-    max-width: 90vw;
-    width: 100%;
-    height: auto;
-    min-height: 160px;
+    max-width: 260px;
+    height: 220px;
     cursor: pointer;
     perspective: 1000px;
 }
