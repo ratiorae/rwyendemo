@@ -127,17 +127,18 @@ a:hover {
     opacity: 0.75;
     transition: opacity 0.2s, background-color 0.2s, transform 0.2s;
     transform: translateY(3px);
-    box-shadow: none;
+    box-shadow: -3px -3px 0 var(--shadow-dark),
+    3px -3px 0 var(--shadow-dark);
 }
 
 .nav-tab:hover {
     opacity: 1;
-    color: #8a3d99;
+    color: var(--body-text);
     transform: translateY(0px);
 }
 
 .nav-tab.active {
-    background-color: var(--box-bg);
+    background-color: var(--marquee-bg);
     color: var(--body-text);
     opacity: 1;
     transform: translateY(3px);
