@@ -113,8 +113,8 @@ a:hover {
 }
 
 .nav-tab {
-    background-color: var(--button-bg);
-    color: var(--marquee-text);
+    background-color: var(--marquee-bg);
+    color: var(--body-text);
     font-family: var(--font-main);
     font-size: clamp(12px, 2vw, 20px);
     padding: 8px 20px;
