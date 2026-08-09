@@ -474,7 +474,7 @@ h2 {
 
 /* ── Work With Me ── */
 .work-intro {
-    font-size: clamp(16px, 3vw, 24px);
+    font-size: 18px;
     margin: 20px auto 30px auto;
     max-width: 700px;
     color: var(--body-text);
@@ -491,6 +491,7 @@ h2 {
 
 .offering-card {
     background-color: var(--bg);
+    font-size: 16px;
     color: #fff;
     border-radius: 20px;
     padding: 24px 20px;
@@ -531,7 +532,7 @@ h2 {
 .coffee-section {
     margin: 10px auto 30px auto;
     max-width: 600px;
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: 16px;
     color: var(--body-text);
 }
 
