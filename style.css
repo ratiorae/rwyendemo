@@ -247,6 +247,7 @@ a:hover {
 
 #buttons a {
     color: var(--marquee-text);
+    font-size: clamp (20px, 5vw, 28px);
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
@@ -273,7 +274,7 @@ a:hover {
     border-radius: 20px;
     box-shadow: 8px 8px 0 var(--shadow-dark),
                 12px 12px 0 var(--shadow-darker);
-    font-size: clamp(18px, 4vw, 28px);
+    font-size: clamp (20px, 5vw, 28px);
     text-align: center;
     flex: 0 0 auto;
     max-width: 300px;
@@ -547,7 +548,7 @@ h2 {
 
 .offering-card h3 {
     font-family: var(--font-main);
-    font-size: clamp(18px, 2.5vw, 24px);
+    font-size: clamp(20px, 4vw, 28px);
     margin: 0;
     color: #fff;
     text-align: center;
@@ -555,7 +556,7 @@ h2 {
 
 .card-back p {
     font-family: var(--font-main);
-    font-size: clamp(13px, 1.8vw, 17px);
+    font-size: clamp(16px, 4vw, 22px);
     color: #fff;
     margin: 0 0 10px 0;
     line-height: 1.5;
@@ -564,7 +565,7 @@ h2 {
 
 .card-examples {
     font-family: var(--font-main);
-    font-size: clamp(11px, 1.4vw, 14px);
+    font-size: clamp(13px, 3vw, 16px);
     color: rgba(255,255,255,0.75);
     text-align: center;
     font-style: italic;
