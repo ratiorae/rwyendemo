@@ -525,13 +525,18 @@ h2 {
 }
 
 .offering-heading h2 {
+    font-family: var(--font-main);
+    font-size: clamp(28px, 5vw, 40px);
     margin: 0;
     color: var(--body-text);
 }
 
 .offering-heading p {
+    font-family: var(--font-main);
+    font-size: clamp(14px, 2vw, 18px);
     margin: 5px 0 0;
     color: var(--body-text);
+    font-style: italic;
 }
 
 .offering-cards {
@@ -703,6 +708,29 @@ tr:after { content: ""; display: table; clear: both; }
    .offerings-grid {
         flex-direction: column;
         align-items: center;
+    }
+
+   .offering-group {
+        width: 100%;
+    }
+
+    .offering-heading {
+        margin-bottom: 20px;
+    }
+
+    .offering-heading h2 {
+        font-size: clamp(26px, 8vw, 34px);
+    }
+
+    .offering-heading p {
+        font-size: 15px;
+        margin-top: 4px;
+    }
+
+    .offering-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     .offering-card {
