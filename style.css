@@ -134,6 +134,16 @@ a:hover {
     z-index: 11;
 }
 
+.nav-tab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 6px;
+    background-color: inherit;
+}
+
 .nav-tab:link, .nav-tab:visited {
     color: #d3d3d3;
 }
