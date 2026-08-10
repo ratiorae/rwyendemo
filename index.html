@@ -128,9 +128,9 @@ function myFunction() {
 </div>
 <!-- END PAGE WRAP -->
 
-<!-- BOOKSHELF SLIDE-UP TAB -->
-<div id="bookshelf-tab">
-    <div id="bookshelf-panel">
+<!-- MEDIA SHELF SLIDE-IN TAB -->
+<div id="shelf-tab">
+    <div id="shelf-panel">
         <h3>📚 Bookshelf</h3>
         <p><strong>🎵 Listening</strong></p>
         <ul>
@@ -145,7 +145,7 @@ function myFunction() {
             <li>Add what you're watching here</li>
         </ul>
     </div>
-    <div id="bookshelf-handle" onclick="toggleBookshelf()"><span>📚 Bookshelf</span></div>
+    <div id="shelf-handle" onclick="toggleBookshelf()"><span>📚 Bookshelf</span></div>
 </div>
 
 <!-- TITLE BOUNCE ANIMATION -->
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- BOOKSHELF TOGGLE -->
 <script>
 function toggleBookshelf() {
-    const tab = document.getElementById("bookshelf-tab");
+    const tab = document.getElementById("shelf-tab");
     tab.classList.toggle("open");
 }
 </script>
