@@ -120,8 +120,7 @@ a:hover {
     padding: 8px 20px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    border-bottom-left-radius: none;
-    border-bottom-right-radius: 12px;
+    border-bottom: none;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
