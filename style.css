@@ -127,6 +127,8 @@ a:hover {
     transition: opacity 0.2s, background-color 0.2s, transform 0.2s;
     transform: translateY(3px);
     box-shadow: 6px 0 0 var(--shadow-dark);
+    position: relative;
+    z-index: 11;
 }
 
 .nav-tab:link, .nav-tab:visited {
