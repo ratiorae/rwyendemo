@@ -464,6 +464,8 @@ h2 {
     width: 250px;
     overflow: hidden;
     padding: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     box-shadow: 4px 4px 0 var(--shadow-dark);
     font-size: clamp(14px, 1.8vw, 20px);
     text-align: left;
