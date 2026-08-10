@@ -130,7 +130,7 @@ a:hover {
     box-shadow: none;
     position: relative;
     overflow: visible;
-    z-index: 11;
+    z-index: 0;
 }
 
 .nav-tab::after {
