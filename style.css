@@ -444,7 +444,6 @@ h2 {
     user-select: none;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    transform: rotate(180deg);
     box-shadow: 4px 4px 0 var(--shadow-dark);
     transition: background-color 0.2s;
     order: 2;
@@ -452,6 +451,11 @@ h2 {
 
 #bookshelf-handle:hover {
     background-color: var(--button-bg);
+}
+
+#bookshelf-handle span {
+   display: block;
+   transform: rotate(180deg)
 }
 
 #bookshelf-panel {
@@ -658,8 +662,8 @@ tr:after { content: ""; display: table; clear: both; }
     #nav-tabs { gap: 3px; }
     .nav-tab  { padding: 6px 12px; font-size: 12px; }
 
-    #bookshelf-tab  { right: 10px; }
-    #bookshelf-panel { width: 280px; }
+    #bookshelf-tab  { right: 0px; }
+    #bookshelf-panel { width: 260px; }
 
    .offerings-grid {
         flex-direction: column;
