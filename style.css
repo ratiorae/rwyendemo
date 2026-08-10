@@ -413,15 +413,17 @@ h2 {
 .popup .show    { visibility: visible; opacity: 1; animation: fadeIn 0.5s forwards; }
 .popup .fadeOut { animation: fadeOut 0.5s forwards; }
 
-/* ── Bookshelf Slide-up Tab ── */
+/* ── Media Shelf Slide-up Tab ── */
 #bookshelf-tab {
     position: fixed;
     bottom: 0;
-    right: 40px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     z-index: 1000;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 #bookshelf-handle {
@@ -429,13 +431,16 @@ h2 {
     color: var(--marquee-text);
     font-family: var(--font-main);
     font-size: clamp(12px, 1.5vw, 18px);
-    padding: 8px 20px;
+    padding: 20px 8px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     cursor: pointer;
     user-select: none;
-    box-shadow: -3px -3px 0 var(--shadow-dark), 3px -3px 0 var(--shadow-dark);
+    writing-mode: vertical-rl;
+    text-orientation: rotate(180deg);
+    box-shadow: -4px 4px 0 var(--shadow-dark);
     transition: background-color 0.2s;
+    order: 2;
 }
 
 #bookshelf-handle:hover {
@@ -445,19 +450,22 @@ h2 {
 #bookshelf-panel {
     background-color: var(--box-bg);
     color: var(--body-text);
-    width: 320px;
-    max-height: 0;
+    width: 0px;
+    max-height: 320px;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.3s ease;
+    transition: width 0.4s ease, padding 0.3s ease;
     border-top-left-radius: 12px;
-    padding: 0 20px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+    padding: 0;
     box-shadow: -4px -4px 0 var(--shadow-dark);
     font-size: clamp(14px, 1.8vw, 20px);
     text-align: left;
+    order: 1;
 }
 
 #bookshelf-panel.open {
-    max-height: 500px;
+    max-height: 320px;
     padding: 20px;
 }
 
