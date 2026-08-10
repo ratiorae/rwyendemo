@@ -461,7 +461,7 @@ h2 {
 #bookshelf-panel {
     background-color: var(--box-bg);
     color: var(--body-text);
-    width: 320px;
+    width: 250px;
     overflow: hidden;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -663,7 +663,7 @@ tr:after { content: ""; display: table; clear: both; }
     .nav-tab  { padding: 6px 12px; font-size: 12px; }
 
     #bookshelf-tab  { right: 0; }
-    #bookshelf-panel { width: 260px; }
+    #bookshelf-panel { width: 200px; }
 
    .offerings-grid {
         flex-direction: column;
