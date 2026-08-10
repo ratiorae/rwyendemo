@@ -436,17 +436,17 @@ h2 {
     font-family: var(--font-main);
     font-size: clamp(12px, 1.5vw, 18px);
     padding: 20px 8px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     cursor: pointer;
     user-select: none;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     box-shadow: 4px 4px 0 var(--shadow-dark);
     transition: background-color 0.2s;
-    order: 2;
+    order: 1;
 }
 
 #bookshelf-handle:hover {
@@ -470,7 +470,7 @@ h2 {
     box-shadow: -4px 4px 0 var(--shadow-dark);
     font-size: clamp(14px, 1.8vw, 20px);
     text-align: left;
-    order: 1;
+    order: 2;
 }
 
 #bookshelf-panel h3 {
