@@ -92,6 +92,8 @@ a:hover {
     width: 100%;
     font-size: 36px;
     margin: auto;
+    position: relative;
+    z-index: 20;
     box-sizing: border-box;
     border-top-left-radius: 0;
     border-top-right-radius: 20px;
@@ -138,8 +140,9 @@ a:hover {
     top: 0;
     right: -6px;
     width: 6px;
-    height: calc(100% - 3px);
+    height: 100%;
     background: var(--shadow-dark);
+    z-index: -1;
 }
 
 .nav-tab:link, .nav-tab:visited {
