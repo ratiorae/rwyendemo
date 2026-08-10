@@ -128,7 +128,19 @@ a:hover {
     transform: translateY(3px);
     box-shadow: 6px 0 0 var(--shadow-dark);
     position: relative;
+    overflow: visible;
     z-index: 11;
+}
+
+.nav-tab::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 6px;
+    background: inherit;
+    z-index: -1;
 }
 
 .nav-tab:link, .nav-tab:visited {
@@ -160,6 +172,8 @@ a:hover {
     width: 100%;
     text-align: center;
     margin: auto;
+    position: relative;
+    z-index: 20;
     box-sizing: border-box;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
