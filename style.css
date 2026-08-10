@@ -662,7 +662,7 @@ tr:after { content: ""; display: table; clear: both; }
     #nav-tabs { gap: 3px; }
     .nav-tab  { padding: 6px 12px; font-size: 12px; }
 
-    #bookshelf-tab  { right: 0px; }
+    #bookshelf-tab  { right: 0; }
     #bookshelf-panel { width: 260px; }
 
    .offerings-grid {
