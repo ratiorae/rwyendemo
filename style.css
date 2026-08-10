@@ -509,17 +509,42 @@ h2 {
 
 .offerings-grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    gap: 60px;
     margin: 0 auto 30px auto;
     max-width: 900px;
 }
 
+.offering-group {
+    width: 100%;
+}
+
+.offering-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.offering-heading h2 {
+    margin: 0;
+    color: var(--body-text);
+}
+
+.offering-heading p {
+    margin: 5px 0 0;
+    color: var(--body-text);
+}
+
+.offering-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
 /* ── Flip Card ── */
 .offering-card {
-    flex: 1 1 220px;
+    flex: 0 1 260px;
     max-width: 260px;
     height: 220px;
     cursor: pointer;
