@@ -139,8 +139,8 @@ a:hover {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -6px;
-    height: 6px;
+    bottom: -10px;
+    height: 10px;
     background-color: inherit;
 }
 
