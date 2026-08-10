@@ -424,7 +424,6 @@ h2 {
     flex-direction: row;
     align-items: flex-end;
     transition: transform 0.4s ease;
-    filter: drop-shadow(4px 4px 0 var(--shadow-dark));
 }
 
 #bookshelf-tab.open {
@@ -471,8 +470,9 @@ h2 {
     font-size: clamp(14px, 1.8vw, 20px);
     text-align: left;
     order: 2;
-    positive: relative;
+    position: relative;
     z-index: 1;
+    box-shadow: -4px 4px 0 var(--shadow-dark);
 }
 
 #bookshelf-panel h3 {
