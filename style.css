@@ -416,7 +416,6 @@ h2 {
 /* ── Media Shelf Slide-up Tab ── */
 #bookshelf-tab {
     position: fixed;
-    bottom: 0;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
@@ -433,11 +432,14 @@ h2 {
     font-size: clamp(12px, 1.5vw, 18px);
     padding: 20px 8px;
     border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 0;
     cursor: pointer;
     user-select: none;
     writing-mode: vertical-rl;
-    text-orientation: rotate(180deg);
+    text-orientation: mixed;
+    transform: rotate(180deg);
     box-shadow: -4px 4px 0 var(--shadow-dark);
     transition: background-color 0.2s;
     order: 2;
@@ -450,22 +452,21 @@ h2 {
 #bookshelf-panel {
     background-color: var(--box-bg);
     color: var(--body-text);
-    width: 0px;
-    max-height: 320px;
+    max-width: 320px;
     overflow: hidden;
     transition: width 0.4s ease, padding 0.3s ease;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     border-top-right-radius: 0;
     padding: 0;
-    box-shadow: -4px -4px 0 var(--shadow-dark);
+    box-shadow: -4px 4px 0 var(--shadow-dark);
     font-size: clamp(14px, 1.8vw, 20px);
     text-align: left;
     order: 1;
 }
 
 #bookshelf-panel.open {
-    max-height: 320px;
+    width: 320px;
     padding: 20px;
 }
 
