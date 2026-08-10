@@ -92,6 +92,8 @@ a:hover {
     width: 100%;
     font-size: 36px;
     margin: auto;
+    position: relative;
+    z-index: 1;
     box-sizing: border-box;
     border-top-left-radius: 0;
     border-top-right-radius: 20px;
@@ -161,6 +163,8 @@ a:hover {
     width: 100%;
     text-align: center;
     margin: auto;
+    position: relative;
+    z-index: 1;
     box-sizing: border-box;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
