@@ -459,7 +459,6 @@ h2 {
     color: var(--body-text);
     width: 320px;
     overflow: hidden;
-    transition: width 0.4s ease, padding 0.3s ease;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     border-top-right-radius: 0;
@@ -468,11 +467,6 @@ h2 {
     font-size: clamp(14px, 1.8vw, 20px);
     text-align: left;
     order: 1;
-}
-
-#bookshelf-panel.open {
-    width: 320px;
-    padding: 20px;
 }
 
 #bookshelf-panel h3 {
