@@ -97,9 +97,7 @@ a:hover {
     box-sizing: border-box;
     border-top-left-radius: 0;
     border-top-right-radius: 20px;
-    box-shadow:
-        8px 8px 0 var(--shadow-dark),
-        12px 12px 0 var(--shadow-darker);
+    box-shadow: 8px 0 0 rgba(0, 0, 0, 0.25);
 }
 
 /* ── Browser Tab Navigation ── */
@@ -142,6 +140,7 @@ a:hover {
     width: 6px;
     height: 100%;
     background: var(--shadow-dark);
+    border-top-right-radius: 6px;
     z-index: -1;
 }
 
