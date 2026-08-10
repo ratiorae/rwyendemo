@@ -455,7 +455,7 @@ h2 {
 
 #bookshelf-handle span {
    display: block;
-   transform: rotate(180deg)
+   transform: rotate(180deg);
 }
 
 #bookshelf-panel {
