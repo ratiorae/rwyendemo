@@ -125,7 +125,7 @@ a:hover {
     text-decoration: none;
     display: inline-block;
     transition: opacity 0.2s, background-color 0.2s, transform 0.2s;
-    transform: translateY(10px);
+    transform: translateY(3px);
     box-shadow: 6px 0 0 var(--shadow-dark);
     position: relative;
     overflow: visible;
