@@ -131,7 +131,7 @@ a:hover {
     box-shadow: none;
     position: relative;
     overflow: visible;
-    z-index: 0;
+    z-index: 1;
 }
 
 .nav-tab::after {
@@ -143,7 +143,8 @@ a:hover {
     height: 100%;
     background: var(--shadow-dark);
     border-top-right-radius: 6px;
-    z-index: -1;
+    z-index: 0;
+    display: none;
 }
 
 .nav-tab:link, .nav-tab:visited {
@@ -182,7 +183,7 @@ a:hover {
     border-top-left-radius: 0;
     box-shadow:
         8px 8px 0 var(--shadow-dark),
-        12px 12px 0 var(--shadow-darker);
+        12px 12px 0 var(--shadow-darker),
         8px -8px 0 var(--shadow-dark);
 }
 
