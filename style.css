@@ -448,6 +448,7 @@ h2 {
     order: 1;
     position: relative;
     z-index: 2;
+    box-shadow: -4px 4px 0 var(--shadow-dark);
 }
 
 #bookshelf-handle:hover {
