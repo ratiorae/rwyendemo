@@ -92,8 +92,6 @@ a:hover {
     width: 100%;
     font-size: 36px;
     margin: auto;
-    position: relative;
-    z-index: 20;
     box-sizing: border-box;
     border-top-left-radius: 0;
     border-top-right-radius: 20px;
@@ -134,16 +132,6 @@ a:hover {
     z-index: 11;
 }
 
-.nav-tab::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -10px;
-    height: 10px;
-    background-color: inherit;
-}
-
 .nav-tab:link, .nav-tab:visited {
     color: #d3d3d3;
 }
@@ -173,8 +161,6 @@ a:hover {
     width: 100%;
     text-align: center;
     margin: auto;
-    position: relative;
-    z-index: 20;
     box-sizing: border-box;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
