@@ -414,7 +414,7 @@ h2 {
 .popup .fadeOut { animation: fadeOut 0.5s forwards; }
 
 /* ── Media Shelf Slide-up Tab ── */
-#bookshelf-tab {
+#shelf-tab {
     position: fixed;
     top: 70%;
     right: 0;
@@ -426,11 +426,11 @@ h2 {
     transition: transform 0.4s ease;
 }
 
-#bookshelf-tab.open {
+#shelf-tab.open {
    transform: translateX(0%) translateY(-50%);
 }
 
-#bookshelf-handle {
+#shelf-handle {
     background-color: var(--marquee-bg);
     color: var(--marquee-text);
     font-family: var(--font-main);
@@ -451,16 +451,16 @@ h2 {
     box-shadow: -4px 4px 0 var(--shadow-dark);
 }
 
-#bookshelf-handle:hover {
+#shelf-handle:hover {
     background-color: var(--button-bg);
 }
 
-#bookshelf-handle span {
+#shelf-handle span {
    display: block;
    word-spacing: 5px;
 }
 
-#bookshelf-panel {
+#shelf-panel {
     background-color: var(--box-bg);
     color: var(--body-text);
     width: 250px;
@@ -476,18 +476,18 @@ h2 {
     box-shadow: -4px 4px 0 var(--shadow-dark);
 }
 
-#bookshelf-panel h3 {
+#shelf-panel h3 {
     margin-top: 0;
     font-size: clamp(16px, 2vw, 22px);
     color: var(--marquee-bg);
 }
 
-#bookshelf-panel ul {
+#shelf-panel ul {
     padding-left: 16px;
     margin: 8px 0;
 }
 
-#bookshelf-panel li {
+#shelf-panel li {
     margin-bottom: 6px;
     font-size: clamp(12px, 1.5vw, 16px);
 }
@@ -665,8 +665,8 @@ tr:after { content: ""; display: table; clear: both; }
     #nav-tabs { gap: 3px; }
     .nav-tab  { padding: 6px 12px; font-size: 12px; }
 
-    #bookshelf-tab  { right: 0; }
-    #bookshelf-panel { width: 200px; }
+    #shelf-tab  { right: 0; }
+    #shelf-panel { width: 200px; }
 
    .offerings-grid {
         flex-direction: column;
