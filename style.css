@@ -642,6 +642,195 @@ h2 {
     color: var(--body-text);
 }
 
+
+/* ── Music Page ── */
+ 
+/* Yen Océane section — dark teal card to signal artist identity */
+.yen-oceane-section {
+    background-color: var(--bg);
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    box-shadow:
+        6px 6px 0 var(--shadow-green),
+        10px 10px 10px var(--shadow-green-soft);
+    text-align: center;
+}
+ 
+.yen-oceane-label {
+    color: rgba(255,255,255,0.6); /* muted white label above name */
+    font-size: clamp(14px, 2vw, 18px);
+    margin: 0 0 6px 0;
+}
+ 
+.yen-oceane-title {
+    color: #fff;
+    font-size: clamp(28px, 5vw, 52px);
+    margin: 0 0 12px 0;
+    font-family: var(--font-main);
+    letter-spacing: 0.05em;
+}
+ 
+.yen-oceane-bio {
+    color: rgba(255,255,255,0.8);
+    font-size: clamp(16px, 3vw, 22px);
+    margin: 0 auto 24px auto;
+    max-width: 600px;
+}
+ 
+.music-embed-wrap {
+    margin: 0 auto 24px auto;
+    max-width: 700px;
+}
+ 
+.embed-label {
+    color: rgba(255,255,255,0.7);
+    font-size: clamp(14px, 2vw, 18px);
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+ 
+/* Streaming buttons — white on teal */
+.stream-btn {
+    background-color: rgba(255,255,255,0.15); /* subtle white tint */
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: clamp(14px, 2vw, 18px);
+    box-shadow: 4px 4px 0 var(--shadow-green);
+    transition: background-color 0.2s;
+}
+ 
+.stream-btn:hover {
+    background-color: rgba(255,255,255,0.25);
+    animation: shake 0.7s;
+    animation-iteration-count: 1;
+}
+ 
+.stream-btn a {
+    color: #fff !important; /* override global link colour */
+    text-decoration: none;
+    white-space: nowrap;
+}
+ 
+/* Section headers */
+.section-header {
+    text-align: left;
+    margin: 30px 0 16px 0;
+    border-bottom: 3px solid var(--marquee-bg); /* pink underline */
+    padding-bottom: 8px;
+}
+ 
+.section-header h2 {
+    font-size: clamp(20px, 4vw, 30px);
+    color: var(--body-text);
+    margin: 0;
+}
+ 
+/* Live section — compact list */
+.live-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+ 
+.live-item {
+    background-color: var(--marquee-bg); /* pink, like the stuff/buttons2 style */
+    color: #fff;
+    border-radius: 20px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px 0 var(--shadow-dark),
+                10px 10px 0 var(--shadow-darker);
+    font-size: clamp(16px, 3vw, 22px);
+}
+ 
+.live-date {
+    font-weight: bold;
+    white-space: nowrap;
+}
+ 
+.live-venue {
+    flex: 1; /* takes up remaining space */
+}
+ 
+.live-link {
+    color: #fff !important;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+ 
+/* Selected works grid — pink cards like stuff/buttons2 style */
+.works-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+ 
+.work-card {
+    background-color: var(--footer-bg); /* deep pink */
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 6px 6px 0 var(--shadow-dark),
+                10px 10px 0 var(--shadow-darker);
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+ 
+.work-card-upcoming {
+    background-color: var(--marquee-bg); /* lighter pink for in-progress */
+    opacity: 0.85;
+}
+ 
+.work-card-info {
+    flex: 1 1 260px; /* text takes available space */
+    text-align: left;
+}
+ 
+.work-card-info h3 {
+    color: #fff;
+    font-size: clamp(18px, 3vw, 24px);
+    margin: 0 0 10px 0;
+    font-family: var(--font-main);
+    font-style: italic;
+}
+ 
+.work-card-info p {
+    color: rgba(255,255,255,0.85);
+    font-size: clamp(14px, 2.5vw, 18px);
+    margin: 0;
+    line-height: 1.5;
+    font-family: var(--font-main);
+}
+ 
+.coming-soon-tag {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: clamp(12px, 1.8vw, 16px);
+}
+ 
+.work-embed {
+    flex: 1 1 300px; /* embed takes available space */
+    border-radius: 12px;
+    overflow: hidden; /* clips iframe to rounded corners */
+}
+ 
+.work-embed iframe {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
+
 /* ── Tables ── */
 table { padding-left: 5px; width: auto; margin: auto; }
 td    { font-size: 25px; float: left; }
